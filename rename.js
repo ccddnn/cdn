@@ -1,4 +1,4 @@
-const { readdir, rename } = require('fs/promises')
+const { readdir, rename } = require('fs').promises
 
 readdir('./')
 .then(filenames => {
