@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hello China!</title>
+    <style type="text/css">
+      details {
+        margin-top: 16px;
+      }
+      details + details {
+        margin-top: 8px;
+      }
+      span {
+        display: none;
+        padding: 4px;
+        line-height: 1.5;
+      }
+    </style>
+    <style type="text/css">
+      .zgj {
+        line-height: 2;
+      }
+      .zyzzj {
+        font-weight: 700;
+      }
+      #color:checked ~ label[for=zygwwyh],
+      #color:checked ~ details .zygwwyh {
+        color: #ffcc5c;
+      }
+      #color:checked ~ label[for=zysjc],
+      #color:checked ~ details .zysjc {
+        color: #318ce7;
+      }
+      #color:checked ~ label[for=zyzzjcw],
+      #color:checked ~ details .zyzzjcw {
+        color: #e32636;
+      }
+    </style>
+    <style type="text/css">
+      #zgj:checked ~ details .zgj {
+        display: inline;
+      }
+      #zyzzjcw:checked ~ details .zyzzjcw {
+        display: inline;
+      }
+      #zyzzj:checked ~ details .zyzzj {
+        display: inline;
+      }
+      #zysjc:checked ~ details .zysjc {
+        display: inline;
+      }
+      #zygwwyh:checked ~ details .zygwwyh {
+        display: inline;
+      }
+      #gjzx:checked ~ details .gjzx {
+        display: inline;
+      }
+      #qgrd:checked ~ details .qgrd {
+        display: inline;
+      }
+      #gwy:checked ~ details .gwy {
+        display: inline;
+      }
+      #qgzx:checked ~ details .qgzx {
+        display: inline;
+      }
+      #g3:checked ~ details .g3 {
+        display: inline;
+      }
+      #zyjw:checked ~ details .zyjw {
+        display: inline;
+      }
+    </style>
+    <style type="text/css">
+      #update:checked ~ details .del {
+        text-decoration: line-through;
+        font-style: italic;
+        opacity: 0.5;
+      }
+      #update:checked ~ details .ins::before,
+      #update:checked ~ details .upd::before {
+        font-weight: bolder;
+        color: #e32636;
+      }
+      #update:checked ~ details .ins::before {
+        content: '+';
+      }
+      #update:checked ~ details .upd::before {
+        content: '\2195';
+      }
+      #update:checked ~ details .upd {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <input type="checkbox" id="color" checked>
+      <label for="color">颜色</label>
+      <input type="checkbox" id="update" checked>
+      <label for="update">增补离任变动</label>
+      <br/>
+      <input type="checkbox" id="zgj" checked>
+      <label for="zgj">国家级正职</label>
+      <br/>
+      <input type="checkbox" id="zyzzjcw" checked>
+      <label for="zyzzjcw">中央政治局常务委员会</label>
+      <input type="checkbox" id="zyzzj" checked>
+      <label for="zyzzj">中央政治局</label>
+      <input type="checkbox" id="zysjc" checked>
+      <label for="zysjc">中央书记处</label>
+      <input type="checkbox" id="zygwwyh" checked>
+      <label for="zygwwyh">中央顾问委员会</label>
+      <br/>
+      <input type="checkbox" id="gjzx" checked>
+      <label for="gjzx">国家主席</label>
+      <input type="checkbox" id="qgrd" checked>
+      <label for="qgrd">全国人大</label>
+      <input type="checkbox" id="gwy" checked>
+      <label for="gwy">国务院</label>
+      <input type="checkbox" id="qgzx" checked>
+      <label for="qgzx">全国政协</label>
+      <input type="checkbox" id="g3" checked>
+      <label for="g3">国家监委&最高法&最高检</label>
+      <input type="checkbox" id="zyjw" checked>
+      <label for="zyjw">中央军委</label>
+      <br/>
+      <button onclick="checkFalse();">反选</button>
+      <button onclick="sort();">排序</button>
+      <details open class="sort" id="no-2023-">
+        <summary>20-14-<b>(2023-)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">习近平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李强</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">赵乐际</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">王沪宁</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">蔡奇</span>
+        <span class="zgj zyzzj zyzzjcw gwy">丁薛祥</span>
+        <span class="zgj zyzzj zyzzjcw">李希</span>
+        <span class="zgj gjzx">韩正</span>
+        <br/>
+        <span class="zyzzj">马兴瑞</span>
+        <span class="zyzzj">王毅</span>
+        <span class="zyzzj">尹力</span>
+        <span class="zyzzj zysjc qgzx">石泰峰</span>
+        <span class="zyzzj gwy">刘国中</span>
+        <span class="zyzzj zysjc">李干杰</span>
+        <span class="zyzzj zysjc">李书磊</span>
+        <span class="zyzzj qgrd">李鸿忠</span>
+        <span class="zyzzj zyjw">何卫东</span>
+        <span class="zyzzj gwy">何立峰</span>
+        <span class="zyzzj zyjw">张又侠</span>
+        <span class="zyzzj gwy">张国清</span>
+        <span class="zyzzj zysjc">陈文清</span>
+        <span class="zyzzj">陈吉宁</span>
+        <span class="zyzzj">陈敏尔</span>
+        <span class="zyzzj">袁家军</span>
+        <span class="zyzzj">黄坤明</span>
+        <span class="zysjc g3">刘金国</span>
+        <span class="zysjc gwy">王小洪</span>
+        <span class="qgrd">王东明</span>
+        <span class="qgrd">肖捷</span>
+        <span class="qgrd">郑建邦</span>
+        <span class="qgrd">丁仲礼</span>
+        <span class="qgrd">郝明金</span>
+        <span class="qgrd">蔡达峰</span>
+        <span class="qgrd">何维</span>
+        <span class="qgrd">武维华</span>
+        <span class="qgrd">铁凝</span>
+        <span class="qgrd">彭清华</span>
+        <span class="qgrd">张庆伟</span>
+        <span class="qgrd">洛桑江村</span>
+        <span class="qgrd">雪克来提·扎克尔</span>
+        <span class="gwy zyjw del">李尚福</span>
+        <span class="gwy">吴政隆</span>
+        <span class="gwy">谌贻琴</span>
+        <span class="gwy del">秦刚</span>
+        <span class="g3">张军</span>
+        <span class="g3">应勇</span>
+        <span class="qgzx">胡春华</span>
+        <span class="qgzx">沈跃跃</span>
+        <span class="qgzx">王勇</span>
+        <span class="qgzx">周强</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">何厚铧</span>
+        <span class="qgzx">梁振英</span>
+        <span class="qgzx">巴特尔</span>
+        <span class="qgzx">苏辉</span>
+        <span class="qgzx">邵鸿</span>
+        <span class="qgzx">高云龙</span>
+        <span class="qgzx">陈武</span>
+        <span class="qgzx">穆虹</span>
+        <span class="qgzx">咸辉</span>
+        <span class="qgzx">王东峰</span>
+        <span class="qgzx">姜信治</span>
+        <span class="qgzx">蒋作君</span>
+        <span class="qgzx">何报翔</span>
+        <span class="qgzx">王光谦</span>
+        <span class="qgzx">秦博勇</span>
+        <span class="qgzx">朱永新</span>
+        <span class="qgzx">杨震</span>
+        <span class="zyjw">刘振立</span>
+        <span class="zyjw">苗华</span>
+        <span class="zyjw">张升民</span>
+      </details>
+      <details open class="sort" id="no-2018-2022">
+        <summary>19-13-<b>(2018-2022)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">习近平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李克强</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">栗战书</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">汪洋</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">王沪宁</span>
+        <span class="zgj zyzzj zyzzjcw">赵乐际</span>
+        <span class="zgj zyzzj zyzzjcw gwy">韩正</span>
+        <span class="zgj gjzx">王岐山</span>
+        <br/>
+        <span class="zyzzj zysjc">丁薛祥</span>
+        <span class="zyzzj qgrd">王晨</span>
+        <span class="zyzzj gwy">刘鹤</span>
+        <span class="zyzzj zyjw">许其亮</span>
+        <span class="zyzzj gwy">孙春兰</span>
+        <span class="zyzzj">李希</span>
+        <span class="zyzzj">李强</span>
+        <span class="zyzzj">李鸿忠</span>
+        <span class="zyzzj">杨洁篪</span>
+        <span class="zyzzj zysjc g3">杨晓渡</span>
+        <span class="zyzzj zyjw">张又侠</span>
+        <span class="zyzzj zysjc">陈希</span>
+        <span class="zyzzj">陈全国</span>
+        <span class="zyzzj">陈敏尔</span>
+        <span class="zyzzj gwy">胡春华</span>
+        <span class="zyzzj zysjc">郭声琨</span>
+        <span class="zyzzj zysjc">黄坤明</span>
+        <span class="zyzzj">蔡奇</span>
+        <span class="zysjc">尤权</span>
+        <span class="qgrd">曹建明</span>
+        <span class="qgrd">张春贤</span>
+        <span class="qgrd">沈跃跃</span>
+        <span class="qgrd">吉炳轩</span>
+        <span class="qgrd">艾力更·依明巴海</span>
+        <span class="qgrd">万鄂湘</span>
+        <span class="qgrd">陈竺</span>
+        <span class="qgrd">王东明</span>
+        <span class="qgrd">白玛赤林</span>
+        <span class="qgrd">丁仲礼</span>
+        <span class="qgrd">郝明金</span>
+        <span class="qgrd">蔡达峰</span>
+        <span class="qgrd">武维华</span>
+        <span class="gwy zyjw">魏凤和</span>
+        <span class="gwy">王勇</span>
+        <span class="gwy">王毅</span>
+        <span class="gwy">肖捷</span>
+        <span class="gwy">赵克志</span>
+        <span class="g3">周强</span>
+        <span class="g3">张军</span>
+        <span class="qgzx">张庆黎</span>
+        <span class="qgzx">刘奇葆</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">董建华</span>
+        <span class="qgzx">万钢</span>
+        <span class="qgzx">何厚铧</span>
+        <span class="qgzx">卢展工</span>
+        <span class="qgzx">王正伟</span>
+        <span class="qgzx">马飚</span>
+        <span class="qgzx">陈晓光</span>
+        <span class="qgzx">梁振英</span>
+        <span class="qgzx">夏宝龙</span>
+        <span class="qgzx">杨传堂</span>
+        <span class="qgzx">李斌</span>
+        <span class="qgzx">巴特尔</span>
+        <span class="qgzx">汪永清</span>
+        <span class="qgzx">何立峰</span>
+        <span class="qgzx">苏辉</span>
+        <span class="qgzx">郑建邦</span>
+        <span class="qgzx">辜胜阻</span>
+        <span class="qgzx">刘新成</span>
+        <span class="qgzx">何维</span>
+        <span class="qgzx">邵鸿</span>
+        <span class="qgzx">高云龙</span>
+        <span class="zyjw">李作成</span>
+        <span class="zyjw">苗华</span>
+        <span class="zyjw">张升民</span>
+      </details>
+      <details open class="sort" id="no-2013-2017">
+        <summary>18-12-<b>(2013-2017)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">习近平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李克强</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">张德江</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">俞正声</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">刘云山</span>
+        <span class="zgj zyzzj zyzzjcw">王岐山</span>
+        <span class="zgj zyzzj zyzzjcw gwy">张高丽</span>
+        <br/>
+        <span class="zyzzj gwy">马凯</span>
+        <span class="zyzzj">王沪宁</span>
+        <span class="zyzzj gwy">刘延东</span>
+        <span class="zyzzj zysjc">刘奇葆</span>
+        <span class="zyzzj zyjw">许其亮</span>
+        <span class="zyzzj">孙春兰</span>
+        <span class="zyzzj del">孙政才</span>
+        <span class="zyzzj qgrd">李建国</span>
+        <span class="zyzzj gjzx">李源潮</span>
+        <span class="zyzzj gwy">汪洋</span>
+        <span class="zyzzj">张春贤</span>
+        <span class="zyzzj zyjw">范长龙</span>
+        <span class="zyzzj">孟建柱</span>
+        <span class="zyzzj zysjc">赵乐际</span>
+        <span class="zyzzj">胡春华</span>
+        <span class="zyzzj zysjc">栗战书</span>
+        <span class="zyzzj">郭金龙</span>
+        <span class="zyzzj">韩正</span>
+        <span class="zysjc">杜青林</span>
+        <span class="zysjc">赵洪祝</span>
+        <span class="zysjc gwy del">杨晶</span>
+        <span class="qgrd">王胜俊</span>
+        <span class="qgrd">陈昌智</span>
+        <span class="qgrd">严隽琪</span>
+        <span class="qgrd">王晨</span>
+        <span class="qgrd">沈跃跃</span>
+        <span class="qgrd">吉炳轩</span>
+        <span class="qgrd">张平</span>
+        <span class="qgrd">向巴平措</span>
+        <span class="qgrd">艾力更·依明巴海</span>
+        <span class="qgrd">万鄂湘</span>
+        <span class="qgrd">张宝文</span>
+        <span class="qgrd">陈竺</span>
+        <span class="gwy zyjw">常万全</span>
+        <span class="gwy">杨洁篪</span>
+        <span class="gwy">郭声琨</span>
+        <span class="gwy">王勇</span>
+        <span class="g3">周强</span>
+        <span class="g3">曹建明</span>
+        <span class="qgzx del">令计划</span>
+        <span class="qgzx">韩启德</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">董建华</span>
+        <span class="qgzx">万钢</span>
+        <span class="qgzx">林文漪</span>
+        <span class="qgzx">罗富和</span>
+        <span class="qgzx">何厚铧</span>
+        <span class="qgzx">张庆黎</span>
+        <span class="qgzx">李海峰</span>
+        <span class="qgzx del">苏荣</span>
+        <span class="qgzx">陈元</span>
+        <span class="qgzx">卢展工</span>
+        <span class="qgzx">周小川</span>
+        <span class="qgzx">王家瑞</span>
+        <span class="qgzx">王正伟</span>
+        <span class="qgzx">马飚</span>
+        <span class="qgzx">齐续春</span>
+        <span class="qgzx">陈晓光</span>
+        <span class="qgzx">马培华</span>
+        <span class="qgzx">刘晓峰</span>
+        <span class="qgzx">王钦敏</span>
+        <span class="qgzx ins">梁振英</span>
+        <span class="zyjw">房峰辉</span>
+        <span class="zyjw">张阳</span>
+        <span class="zyjw">赵克石</span>
+        <span class="zyjw">张又侠</span>
+        <span class="zyjw">吴胜利</span>
+        <span class="zyjw">马晓天</span>
+        <span class="zyjw">魏凤和</span>
+      </details>
+      <details open class="sort" id="no-2008-2012">
+        <summary>17-11-<b>(2008-2012)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">胡锦涛</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">吴邦国</span>
+        <span class="zgj zyzzj zyzzjcw gwy">温家宝</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">贾庆林</span>
+        <span class="zgj zyzzj zyzzjcw">李长春</span>
+        <span class="zgj zyzzj zyzzjcw zysjc gjzx zyjw">习近平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李克强</span>
+        <span class="zgj zyzzj zyzzjcw">贺国强</span>
+        <span class="zgj zyzzj zyzzjcw">周永康</span>
+        <br/>
+        <span class="zyzzj qgzx">王刚</span>
+        <span class="zyzzj">王乐泉</span>
+        <span class="zyzzj qgrd">王兆国</span>
+        <span class="zyzzj gwy">王岐山</span>
+        <span class="zyzzj gwy">回良玉</span>
+        <span class="zyzzj">刘淇</span>
+        <span class="zyzzj zysjc">刘云山</span>
+        <span class="zyzzj gwy">刘延东</span>
+        <span class="zyzzj zysjc">李源潮</span>
+        <span class="zyzzj">汪洋</span>
+        <span class="zyzzj">张高丽</span>
+        <span class="zyzzj gwy">张德江</span>
+        <span class="zyzzj">俞正声</span>
+        <span class="zyzzj zyjw">徐才厚</span>
+        <span class="zyzzj zyjw">郭伯雄</span>
+        <span class="zyzzj del">薄熙来</span>
+        <span class="zyjw ins">范长龙</span>
+        <span class="zysjc">何勇</span>
+        <span class="zysjc">令计划</span>
+        <span class="zysjc">王沪宁</span>
+        <span class="qgrd">路甬祥</span>
+        <span class="qgrd">乌云其木格</span>
+        <span class="qgrd">韩启德</span>
+        <span class="qgrd">华建敏</span>
+        <span class="qgrd">陈至立</span>
+        <span class="qgrd">周铁农</span>
+        <span class="qgrd">李建国</span>
+        <span class="qgrd">司马义·铁力瓦尔地</span>
+        <span class="qgrd">蒋树声</span>
+        <span class="qgrd">陈昌智</span>
+        <span class="qgrd">严隽琪</span>
+        <span class="qgrd">桑国卫</span>
+        <span class="gwy zyjw">梁光烈</span>
+        <span class="gwy">马凯</span>
+        <span class="gwy">孟建柱</span>
+        <span class="gwy">戴秉国</span>
+        <span class="g3">王胜俊</span>
+        <span class="g3">曹建明</span>
+        <span class="qgzx">廖晖</span>
+        <span class="qgzx">杜青林</span>
+        <span class="qgzx del">阿沛·阿旺晋美</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">马万祺</span>
+        <span class="qgzx">白立忱</span>
+        <span class="qgzx">陈奎元</span>
+        <span class="qgzx">阿不来提·阿不都热西提</span>
+        <span class="qgzx">李兆焯</span>
+        <span class="qgzx">黄孟复</span>
+        <span class="qgzx">董建华</span>
+        <span class="qgzx">张梅颖</span>
+        <span class="qgzx">张榕明</span>
+        <span class="qgzx">钱运录</span>
+        <span class="qgzx">孙家正</span>
+        <span class="qgzx">李金华</span>
+        <span class="qgzx">郑万通</span>
+        <span class="qgzx">邓朴方</span>
+        <span class="qgzx">万钢</span>
+        <span class="qgzx">林文漪</span>
+        <span class="qgzx">厉无畏</span>
+        <span class="qgzx">罗富和</span>
+        <span class="qgzx">陈宗兴</span>
+        <span class="qgzx">王志珍</span>
+        <span class="qgzx ins">何厚铧</span>
+        <span class="zyjw">陈炳德</span>
+        <span class="zyjw">李继耐</span>
+        <span class="zyjw">廖锡龙</span>
+        <span class="zyjw">常万全</span>
+        <span class="zyjw">靖志远</span>
+        <span class="zyjw">吴胜利</span>
+        <span class="zyjw">许其亮</span>
+      </details>
+      <details open class="sort" id="no-2003-2007">
+        <summary>16-10-<b>(2003-2007)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">胡锦涛</span>
+        <span class="zgj zyjw del">江泽民</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">吴邦国</span>
+        <span class="zgj zyzzj zyzzjcw gwy">温家宝</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">贾庆林</span>
+        <span class="zgj zyzzj zyzzjcw gjzx zysjc">曾庆红</span>
+        <span class="zgj zyzzj zyzzjcw gwy del">黄菊</span>
+        <span class="zgj zyzzj zyzzjcw">吴官正</span>
+        <span class="zgj zyzzj zyzzjcw">李长春</span>
+        <span class="zgj zyzzj zyzzjcw">罗干</span>
+        <br/>
+        <span class="zyzzj">王乐泉</span>
+        <span class="zyzzj qgrd">王兆国</span>
+        <span class="zyzzj gwy">回良玉</span>
+        <span class="zyzzj">刘淇</span>
+        <span class="zyzzj zysjc">刘云山</span>
+        <span class="zyzzj gwy">吴仪</span>
+        <span class="zyzzj">张立昌</span>
+        <span class="zyzzj">张德江</span>
+        <span class="zyzzj del">陈良宇</span>
+        <span class="zyzzj gwy">周永康</span>
+        <span class="zyzzj">俞正声</span>
+        <span class="zyzzj zysjc">贺国强</span>
+        <span class="zyzzj zyjw">郭伯雄</span>
+        <span class="zyzzj gwy zyjw">曹刚川</span>
+        <span class="zyzzj gwy">曾培炎</span>
+        <span class="zyzzj zysjc">王刚</span>
+        <span class="zysjc">何勇</span>
+        <span class="qgrd">李铁映</span>
+        <span class="qgrd">司马义·艾买提</span>
+        <span class="qgrd">何鲁丽</span>
+        <span class="qgrd">丁石孙</span>
+        <span class="qgrd">成思危</span>
+        <span class="qgrd">许嘉璐</span>
+        <span class="qgrd">蒋正华</span>
+        <span class="qgrd">顾秀莲</span>
+        <span class="qgrd">热地</span>
+        <span class="qgrd">盛华仁</span>
+        <span class="qgrd">路甬祥</span>
+        <span class="qgrd">乌云其木格</span>
+        <span class="qgrd">韩启德</span>
+        <span class="qgrd del">傅铁山</span>
+        <span class="gwy">唐家璇</span>
+        <span class="gwy">华建敏</span>
+        <span class="gwy">陈至立</span>
+        <span class="g3">肖扬</span>
+        <span class="g3">贾春旺</span>
+        <span class="qgzx">王忠禹</span>
+        <span class="qgzx">廖晖</span>
+        <span class="qgzx">刘延东</span>
+        <span class="qgzx">阿沛·阿旺晋美</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">李贵鲜</span>
+        <span class="qgzx">张思卿</span>
+        <span class="qgzx">丁光训</span>
+        <span class="qgzx">霍英东</span>
+        <span class="qgzx">马万祺</span>
+        <span class="qgzx">白立忱</span>
+        <span class="qgzx">罗豪才</span>
+        <span class="qgzx">张克辉</span>
+        <span class="qgzx">周铁农</span>
+        <span class="qgzx">郝建秀</span>
+        <span class="qgzx">陈奎元</span>
+        <span class="qgzx">阿不来提·阿不都热西提</span>
+        <span class="qgzx">徐匡迪</span>
+        <span class="qgzx">李兆焯</span>
+        <span class="qgzx">黄孟复</span>
+        <span class="qgzx">王选</span>
+        <span class="qgzx">张怀西</span>
+        <span class="qgzx">李蒙</span>
+        <span class="qgzx ins">董建华</span>
+        <span class="qgzx ins">张梅颖</span>
+        <span class="qgzx ins">张榕明</span>
+        <span class="zysjc zyjw">徐才厚</span>
+        <span class="zyjw">梁光烈</span>
+        <span class="zyjw">李继耐</span>
+        <span class="zyjw">廖锡龙</span>
+        <span class="zyjw ins">陈炳德</span>
+        <span class="zyjw ins">乔清晨</span>
+        <span class="zyjw ins del">张定发</span>
+        <span class="zyjw ins">靖志远</span>
+      </details>
+      <details open class="sort" id="no-1998-2002">
+        <summary>15-9-<b>(1998-2002)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">江泽民</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">李鹏</span>
+        <span class="zgj zyzzj zyzzjcw gwy">朱镕基</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">李瑞环</span>
+        <span class="zgj zyzzj zyzzjcw zysjc gjzx zyjw">胡锦涛</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">尉健行</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李岚清</span>
+        <br/>
+        <span class="zyzzj zysjc">丁关根</span>
+        <span class="zyzzj qgrd">田纪云</span>
+        <span class="zyzzj">李长春</span>
+        <span class="zyzzj">李铁映</span>
+        <span class="zyzzj gwy">吴邦国</span>
+        <span class="zyzzj">吴官正</span>
+        <span class="zyzzj gwy zyjw">迟浩田</span>
+        <span class="zyzzj zysjc zyjw">张万年</span>
+        <span class="zyzzj zysjc gwy">罗干</span>
+        <span class="zyzzj qgrd">姜春云</span>
+        <span class="zyzzj">贾庆林</span>
+        <span class="zyzzj gwy">钱其琛</span>
+        <span class="zyzzj">黄菊</span>
+        <span class="zyzzj zysjc gwy">温家宝</span>
+        <span class="zyzzj qgrd del">谢非</span>
+        <span class="zyzzj zysjc">曾庆红</span>
+        <span class="zyzzj gwy">吴仪</span>
+        <span class="qgrd">邹家华</span>
+        <span class="qgrd">帕巴拉·格列朗杰</span>
+        <span class="qgrd">王光英</span>
+        <span class="qgrd">程思远</span>
+        <span class="qgrd">布赫</span>
+        <span class="qgrd">铁木尔·达瓦买提</span>
+        <span class="qgrd">吴阶平</span>
+        <span class="qgrd">彭佩云</span>
+        <span class="qgrd">何鲁丽</span>
+        <span class="qgrd">周光召</span>
+        <span class="qgrd">成克杰</span>
+        <span class="qgrd">曹志</span>
+        <span class="qgrd">丁石孙</span>
+        <span class="qgrd">成思危</span>
+        <span class="qgrd">许嘉璐</span>
+        <span class="qgrd">蒋正华</span>
+        <span class="gwy">司马义·艾买提</span>
+        <span class="gwy">王忠禹</span>
+        <span class="g3">肖扬</span>
+        <span class="g3">韩杼滨</span>
+        <span class="qgzx">叶选平</span>
+        <span class="qgzx">杨汝岱</span>
+        <span class="qgzx">王兆国</span>
+        <span class="qgzx">阿沛·阿旺晋美</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">钱伟长</span>
+        <span class="qgzx">卢嘉锡</span>
+        <span class="qgzx">任建新</span>
+        <span class="qgzx">宋健</span>
+        <span class="qgzx">李贵鲜</span>
+        <span class="qgzx">陈俊生</span>
+        <span class="qgzx">张思卿</span>
+        <span class="qgzx">钱正英</span>
+        <span class="qgzx">丁光训</span>
+        <span class="qgzx">孙孚凌</span>
+        <span class="qgzx">安子介</span>
+        <span class="qgzx">霍英东</span>
+        <span class="qgzx">马万祺</span>
+        <span class="qgzx">万国权</span>
+        <span class="qgzx">胡启立</span>
+        <span class="qgzx">陈锦华</span>
+        <span class="qgzx">赵南起</span>
+        <span class="qgzx">毛致用</span>
+        <span class="qgzx">白立忱</span>
+        <span class="qgzx">经叔平</span>
+        <span class="qgzx">罗豪才</span>
+        <span class="qgzx">张克辉</span>
+        <span class="qgzx">周铁农</span>
+        <span class="qgzx">王文元</span>
+        <span class="zyjw">傅全有</span>
+        <span class="zyjw">于永波</span>
+        <span class="zyjw">王克</span>
+        <span class="zyjw">王瑞林</span>
+        <span class="zyjw ins">曹刚川</span>
+        <span class="zyjw ins">徐才厚</span>
+      </details>
+      <details open class="sort" id="no-1993-1997">
+        <summary>14-8-<b>(1993-1997)</b></summary>
+        <span class="zgj zyzzj zyzzjcw gjzx zyjw">江泽民</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李鹏</span>
+        <span class="zgj zyzzj zyzzjcw qgrd">乔石</span>
+        <span class="zgj zyzzj zyzzjcw qgzx">李瑞环</span>
+        <span class="zgj zyzzj zyzzjcw gwy">朱镕基</span>
+        <span class="zgj zyzzj zyzzjcw zyjw">刘华清</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">胡锦涛</span>
+        <span class="zgj gjzx">荣毅仁</span>
+        <br/>
+        <span class="zyzzj zysjc">丁关根</span>
+        <span class="zyzzj qgrd">田纪云</span>
+        <span class="zyzzj gwy">李岚清</span>
+        <span class="zyzzj gwy">李铁映</span>
+        <span class="zyzzj">杨白冰</span>
+        <span class="zyzzj zysjc gwy">吴邦国</span>
+        <span class="zyzzj gwy">邹家华</span>
+        <span class="zyzzj del">陈希同</span>
+        <span class="zyzzj zysjc gwy">姜春云</span>
+        <span class="zyzzj gwy">钱其琛</span>
+        <span class="zyzzj ins">黄菊</span>
+        <span class="zyzzj zysjc">尉健行</span>
+        <span class="zyzzj">谢非</span>
+        <span class="zyzzj del">谭绍文</span>
+        <span class="zyzzj zysjc">温家宝</span>
+        <span class="zyzzj qgrd">王汉斌</span>
+        <span class="zysjc zysjc g3">任建新</span>
+        <span class="qgrd">倪志福</span>
+        <span class="qgrd">陈慕华</span>
+        <span class="qgrd">费孝通</span>
+        <span class="qgrd">孙起孟</span>
+        <span class="qgrd">雷洁琼</span>
+        <span class="qgrd del">秦基伟</span>
+        <span class="qgrd">李锡铭</span>
+        <span class="qgrd">王丙乾</span>
+        <span class="qgrd">帕巴拉·格列朗杰</span>
+        <span class="qgrd">王光英</span>
+        <span class="qgrd">程思远</span>
+        <span class="qgrd">卢嘉锡</span>
+        <span class="qgrd">布赫</span>
+        <span class="qgrd">铁木尔·达瓦买提</span>
+        <span class="qgrd del">甘苦</span>
+        <span class="qgrd del">李沛瑶</span>
+        <span class="qgrd">吴阶平</span>
+        <span class="gwy">迟浩田</span>
+        <span class="gwy">宋健</span>
+        <span class="gwy">李贵鲜</span>
+        <span class="gwy">陈俊生</span>
+        <span class="gwy">司马义·艾买提</span>
+        <span class="gwy">彭珮云</span>
+        <span class="gwy">罗干</span>
+        <span class="g3">张思卿</span>
+        <span class="qgzx">叶选平</span>
+        <span class="qgzx">吴学谦</span>
+        <span class="qgzx">杨汝岱</span>
+        <span class="qgzx">王兆国</span>
+        <span class="qgzx">阿沛·阿旺晋美</span>
+        <span class="qgzx">赛福鼎·艾则孜</span>
+        <span class="qgzx">洪学智</span>
+        <span class="qgzx">杨静仁</span>
+        <span class="qgzx del">周培源</span>
+        <span class="qgzx">邓兆祥</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">刘靖基</span>
+        <span class="qgzx">钱学森</span>
+        <span class="qgzx">钱伟长</span>
+        <span class="qgzx">胡绳</span>
+        <span class="qgzx">钱正英</span>
+        <span class="qgzx">苏步青</span>
+        <span class="qgzx">侯镜如</span>
+        <span class="qgzx">丁光训</span>
+        <span class="qgzx">董寅初</span>
+        <span class="qgzx">孙孚凌</span>
+        <span class="qgzx">安子介</span>
+        <span class="qgzx">霍英东</span>
+        <span class="qgzx">马万祺</span>
+        <span class="qgzx ins">朱光亚</span>
+        <span class="qgzx ins">万国权</span>
+        <span class="qgzx ins">何鲁丽</span>
+        <span class="zyjw">张震</span>
+        <span class="zyjw">张万年</span>
+        <span class="zyjw">于永波</span>
+        <span class="zyjw">傅全有</span>
+        <span class="zyjw ins">王克</span>
+        <span class="zyjw ins">王瑞林</span>
+      </details>
+      <details open class="sort" id="no-1990-1992">
+        <summary>13-7-<b>(1990-1992)</b></summary>
+        <span class="zgj zyzzj zyzzjcw zyjw">江泽民</span>
+        <span class="zgj zyjw del">邓小平</span>
+        <span class="zgj zygwwyh">陈云</span>
+        <span class="zgj zyzzj gjzx zyjw">杨尚昆</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李鹏</span>
+        <span class="zgj zyzzj qgrd">万里</span>
+        <span class="zgj qgzx del">李先念</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">乔石</span>
+        <span class="zgj zyzzj zyzzjcw gwy">姚依林</span>
+        <span class="zgj zyzzj zyzzjcw">宋平</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">李瑞环</span>
+        <span class="zgj gjzx">王震</span>
+        <br/>
+        <span class="zyzzj gwy">田纪云</span>
+        <span class="zyzzj gwy">李铁映</span>
+        <span class="zyzzj">李锡铭</span>
+        <span class="zyzzj">杨汝岱</span>
+        <span class="zyzzj gwy">吴学谦</span>
+        <span class="zyzzj gwy">秦基伟</span>
+        <span class="zyzzj zysjc">丁关根</span>
+        <span class="zyjw">刘华清</span>
+        <span class="zysjc zyjw">杨白冰</span>
+        <span class="zysjc">温家宝</span>
+        <span class="zygwwyh">薄一波</span>
+        <span class="zygwwyh">宋任穷</span>
+        <span class="qgrd">习仲勋</span>
+        <span class="qgrd">彭冲</span>
+        <span class="qgrd">朱学范</span>
+        <span class="qgrd">阿沛·阿旺晋美</span>
+        <span class="qgrd">赛福鼎·艾则孜</span>
+        <span class="qgrd">周谷城</span>
+        <span class="qgrd">严济慈</span>
+        <span class="qgrd">荣毅仁</span>
+        <span class="qgrd">叶飞</span>
+        <span class="qgrd">廖汉生</span>
+        <span class="qgrd">倪志福</span>
+        <span class="qgrd">陈慕华</span>
+        <span class="qgrd">费孝通</span>
+        <span class="qgrd">孙起孟</span>
+        <span class="qgrd">雷洁琼</span>
+        <span class="qgrd">王汉斌</span>
+        <span class="gwy ins">邹家华</span>
+        <span class="gwy ins">朱镕基</span>
+        <span class="gwy">王丙乾</span>
+        <span class="gwy">宋健</span>
+        <span class="gwy">王芳</span>
+        <span class="gwy">李贵鲜</span>
+        <span class="gwy">陈希同</span>
+        <span class="gwy">陈俊生</span>
+        <span class="gwy ins">钱其琛</span>
+        <span class="g3">任建新</span>
+        <span class="g3">刘复之</span>
+        <span class="qgzx">王任重</span>
+        <span class="qgzx">方毅</span>
+        <span class="qgzx">谷牧</span>
+        <span class="qgzx">杨静仁</span>
+        <span class="qgzx del">康克清</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">胡子昂</span>
+        <span class="qgzx">钱昌照</span>
+        <span class="qgzx">周培源</span>
+        <span class="qgzx">缪云台</span>
+        <span class="qgzx">王光英</span>
+        <span class="qgzx">邓兆祥</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx del">屈武</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">马文瑞</span>
+        <span class="qgzx">刘靖基</span>
+        <span class="qgzx">王恩茂</span>
+        <span class="qgzx">钱学森</span>
+        <span class="qgzx">钱伟长</span>
+        <span class="qgzx">胡绳</span>
+        <span class="qgzx">孙晓村</span>
+        <span class="qgzx">程思远</span>
+        <span class="qgzx">卢嘉锡</span>
+        <span class="qgzx">钱正英</span>
+        <span class="qgzx">苏步青</span>
+        <span class="qgzx">司马义·艾买提</span>
+        <span class="qgzx">侯镜如</span>
+        <span class="qgzx">丁光训</span>
+        <span class="qgzx ins">洪学智</span>
+        <span class="qgzx ins">叶选平</span>
+        <span class="zyjw">秦基伟</span>
+        <span class="zyjw">迟浩田</span>
+        <span class="zyjw">赵南起</span>
+      </details>
+      <details open class="sort" id="no-1988-1989">
+        <summary>13-7-<b>(1988-1989)</b></summary>
+        <span class="zgj zyzzj zyzzjcw zyjw del">赵紫阳</span>
+        <span class="zgj zyjw">邓小平</span>
+        <span class="zgj zygwwyh">陈云</span>
+        <span class="zgj zyzzj gjzx zyjw">杨尚昆</span>
+        <span class="zgj zyzzj zyzzjcw gwy">李鹏</span>
+        <span class="zgj zyzzj qgrd">万里</span>
+        <span class="zgj qgzx">李先念</span>
+        <span class="zgj zyzzj zyzzjcw zysjc">乔石</span>
+        <span class="zgj zyzzj zyzzjcw zysjc del">胡启立</span>
+        <span class="zgj zyzzj zyzzjcw gwy">姚依林</span>
+        <span class="zgj gjzx">王震</span>
+        <br/>
+        <span class="zyzzj gwy">田纪云</span>
+        <span class="zyzzj upd">江泽民</span>
+        <span class="zyzzj gwy">李铁映</span>
+        <span class="zyzzj upd">李瑞环</span>
+        <span class="zyzzj">李锡铭</span>
+        <span class="zyzzj">杨汝岱</span>
+        <span class="zyzzj gwy">吴学谦</span>
+        <span class="zyzzj upd">宋平</span>
+        <span class="zyzzj del">胡耀邦</span>
+        <span class="zyzzj gwy">秦基伟</span>
+        <span class="zyzzj">丁关根</span>
+        <span class="zysjc del">芮杏文</span>
+        <span class="zysjc qgzx del">阎明复</span>
+        <span class="zysjc">温家宝</span>
+        <span class="zygwwyh">薄一波</span>
+        <span class="zygwwyh">宋任穷</span>
+        <span class="qgrd">习仲勋</span>
+        <span class="qgrd del">乌兰夫</span>
+        <span class="qgrd">彭冲</span>
+        <span class="qgrd del">韦国清</span>
+        <span class="qgrd">朱学范</span>
+        <span class="qgrd">阿沛·阿旺晋美</span>
+        <span class="qgrd del">班禅额尔德尼·确吉坚赞</span>
+        <span class="qgrd">赛福鼎·艾则孜</span>
+        <span class="qgrd">周谷城</span>
+        <span class="qgrd">严济慈</span>
+        <span class="qgrd">荣毅仁</span>
+        <span class="qgrd">叶飞</span>
+        <span class="qgrd">廖汉生</span>
+        <span class="qgrd">倪志福</span>
+        <span class="qgrd">陈慕华</span>
+        <span class="qgrd">费孝通</span>
+        <span class="qgrd">孙起孟</span>
+        <span class="qgrd">雷洁琼</span>
+        <span class="qgrd">王汉斌</span>
+        <span class="gwy">王丙乾</span>
+        <span class="gwy">宋健</span>
+        <span class="gwy">王芳</span>
+        <span class="gwy">李贵鲜</span>
+        <span class="gwy">陈希同</span>
+        <span class="gwy">陈俊生</span>
+        <span class="g3">任建新</span>
+        <span class="g3">刘复之</span>
+        <span class="qgzx">王任重</span>
+        <span class="qgzx">方毅</span>
+        <span class="qgzx">谷牧</span>
+        <span class="qgzx">杨静仁</span>
+        <span class="qgzx">康克清</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">胡子昂</span>
+        <span class="qgzx">钱昌照</span>
+        <span class="qgzx">周培源</span>
+        <span class="qgzx">缪云台</span>
+        <span class="qgzx">王光英</span>
+        <span class="qgzx">邓兆祥</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx">屈武</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">马文瑞</span>
+        <span class="qgzx">刘靖基</span>
+        <span class="qgzx">王恩茂</span>
+        <span class="qgzx">钱学森</span>
+        <span class="qgzx">钱伟长</span>
+        <span class="qgzx">胡绳</span>
+        <span class="qgzx">孙晓村</span>
+        <span class="qgzx">程思远</span>
+        <span class="qgzx">卢嘉锡</span>
+        <span class="qgzx">钱正英</span>
+        <span class="qgzx">苏步青</span>
+        <span class="qgzx">司马义·艾买提</span>
+        <span class="qgzx ins">侯镜如</span>
+        <span class="qgzx ins">丁光训</span>
+        <span class="zyjw upd">洪学智</span>
+        <span class="zyjw">刘华清</span>
+        <span class="zyjw">秦基伟</span>
+        <span class="zyjw">迟浩田</span>
+        <span class="zyjw">杨白冰</span>
+        <span class="zyjw">赵南起</span>
+      </details>
+      <details open class="sort" id="no-1986-1987">
+        <summary>12-6-<b>(1986-1987)</b></summary>
+        <span class="zgj zyzzj zyzzjcw">胡耀邦</span>
+        <span class="zgj zyzzj zyzzjcw zyjw zygwwyh">邓小平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">赵紫阳</span>
+        <span class="zgj zyzzj zyzzjcw gjzx">李先念</span>
+        <span class="zgj zyzzj zyzzjcw">陈云</span>
+        <span class="zgj zyzzj qgrd">彭真</span>
+        <span class="zgj qgzx">邓颖超</span>
+        <span class="zgj zyjw">徐向前</span>
+        <span class="zgj zyjw">聂荣臻</span>
+        <span class="zgj gjzx">乌兰夫</span>
+        <br/>
+        <span class="zyzzj zysjc gwy">万里</span>
+        <span class="zyzzj">习仲勋</span>
+        <span class="zyzzj gwy">方毅</span>
+        <span class="zyzzj zysjc gwy">田纪云</span>
+        <span class="zyzzj gwy zysjc">乔石</span>
+        <span class="zyzzj zysjc gwy">李鹏</span>
+        <span class="zyzzj zyjw">杨尚昆</span>
+        <span class="zyzzj zyjw">杨得志</span>
+        <span class="zyzzj gwy">吴学谦</span>
+        <span class="zyzzj zysjc zyjw">余秋里</span>
+        <span class="zyzzj">胡乔木</span>
+        <span class="zyzzj zysjc">胡启立</span>
+        <span class="zyzzj gwy">姚依林</span>
+        <span class="zyzzj">倪志福</span>
+        <span class="zyzzj">秦基伟</span>
+        <span class="zyzzj gwy">陈慕华</span>
+        <span class="zysjc">邓力群</span>
+        <span class="zysjc qgrd">陈丕显</span>
+        <span class="zysjc">郝建秀</span>
+        <span class="zysjc">王兆国</span>
+        <span class="zygwwyh">薄一波</span>
+        <span class="zygwwyh">许世友</span>
+        <span class="qgrd">韦国清</span>
+        <span class="qgrd">耿飙</span>
+        <span class="qgrd">胡厥文</span>
+        <span class="qgrd">许德珩</span>
+        <span class="qgrd">彭冲</span>
+        <span class="qgrd">王任重</span>
+        <span class="qgrd">朱学范</span>
+        <span class="qgrd">阿沛·阿旺晋美</span>
+        <span class="qgrd">班禅额尔德尼·确吉坚赞</span>
+        <span class="qgrd">赛福鼎·艾则孜</span>
+        <span class="qgrd">周谷城</span>
+        <span class="qgrd">严济慈</span>
+        <span class="qgrd del">胡愈之</span>
+        <span class="qgrd">荣毅仁</span>
+        <span class="qgrd">叶飞</span>
+        <span class="qgrd">廖汉生</span>
+        <span class="qgrd">韩先楚</span>
+        <span class="qgrd">黄华</span>
+        <span class="qgrd ins">楚图南</span>
+        <span class="gwy">谷牧</span>
+        <span class="gwy">康世恩</span>
+        <span class="gwy">姬鹏飞</span>
+        <span class="gwy">张劲夫</span>
+        <span class="gwy zyjw">张爱萍</span>
+        <span class="gwy">王丙乾</span>
+        <span class="gwy">宋平</span>
+        <span class="gwy">宋健</span>
+        <span class="g3">郑天翔</span>
+        <span class="g3">杨易辰</span>
+        <span class="qgzx">杨静仁</span>
+        <span class="qgzx">刘澜涛</span>
+        <span class="qgzx">陆定一</span>
+        <span class="qgzx">程子华</span>
+        <span class="qgzx">康克清</span>
+        <span class="qgzx">季方</span>
+        <span class="qgzx">庄希泉</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">胡子昂</span>
+        <span class="qgzx">王昆仑</span>
+        <span class="qgzx">钱昌照</span>
+        <span class="qgzx">董其武</span>
+        <span class="qgzx">陶峙岳</span>
+        <span class="qgzx">周叔弢</span>
+        <span class="qgzx">杨成武</span>
+        <span class="qgzx">陈再道</span>
+        <span class="qgzx">吕正操</span>
+        <span class="qgzx">周培源</span>
+        <span class="qgzx">包尔汉</span>
+        <span class="qgzx">缪云台</span>
+        <span class="qgzx">王光英</span>
+        <span class="qgzx">邓兆祥</span>
+        <span class="qgzx">费孝通</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx del">叶圣陶</span>
+        <span class="qgzx">屈武</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx">马文瑞</span>
+        <span class="qgzx">茅以升</span>
+        <span class="qgzx">刘靖基</span>
+        <span class="qgzx ins">王恩茂</span>
+        <span class="qgzx ins">钱学森</span>
+        <span class="qgzx ins">雷洁琼</span>
+        <span class="qgzx ins">汪锋</span>
+        <span class="qgzx ins">钱伟长</span>
+        <span class="zyjw">洪学智</span>
+      </details>
+      <details open class="sort" id="no-1983-1985">
+        <summary>12-6-<b>(1983-1985)</b></summary>
+        <span class="zgj zyzzj zyzzjcw">胡耀邦</span>
+        <span class="zgj zyzzj zyzzjcw zyjw">叶剑英</span>
+        <span class="zgj zyzzj zyzzjcw zyjw zygwwyh">邓小平</span>
+        <span class="zgj zyzzj zyzzjcw gwy">赵紫阳</span>
+        <span class="zgj zyzzj zyzzjcw gjzx">李先念</span>
+        <span class="zgj zyzzj zyzzjcw">陈云</span>
+        <span class="zgj zyzzj qgrd">彭真</span>
+        <span class="zgj zyzzj qgzx">邓颖超</span>
+        <span class="zgj zyzzj zyjw">徐向前</span>
+        <span class="zgj zyzzj zyjw">聂荣臻</span>
+        <span class="zgj zyzzj gjzx">乌兰夫</span>
+        <br/>
+        <span class="zyzzj zysjc gwy">万里</span>
+        <span class="zyzzj zysjc">习仲勋</span>
+        <span class="zyzzj">王震</span>
+        <span class="zyzzj qgrd">韦国清</span>
+        <span class="zyzzj gwy">方毅</span>
+        <span class="zyzzj">李德生</span>
+        <span class="zyzzj zyjw">杨尚昆</span>
+        <span class="zyzzj zyjw">杨得志</span>
+        <span class="zyzzj zysjc zyjw">余秋里</span>
+        <span class="zyzzj">宋任穷</span>
+        <span class="zyzzj">张廷发</span>
+        <span class="zyzzj">胡乔木</span>
+        <span class="zyzzj">倪志福</span>
+        <span class="zyzzj">廖承志</span>
+        <span class="zyzzj zysjc gwy">姚依林</span>
+        <span class="zyzzj">秦基伟</span>
+        <span class="zyzzj gwy">陈慕华</span>
+        <span class="zysjc">邓力群</span>
+        <span class="zysjc del">杨勇</span>
+        <span class="zysjc gwy">谷牧</span>
+        <span class="zysjc qgrd">陈丕显</span>
+        <span class="zysjc">胡启立</span>
+        <span class="zysjc">乔石</span>
+        <span class="zysjc">郝建秀</span>
+        <span class="zygwwyh">薄一波</span>
+        <span class="zygwwyh">许世友</span>
+        <span class="zygwwyh del">谭震林</span>
+        <span class="zygwwyh del">李维汉</span>
+        <span class="qgrd">耿飙</span>
+        <span class="qgrd">胡厥文</span>
+        <span class="qgrd">许德珩</span>
+        <span class="qgrd">彭冲</span>
+        <span class="qgrd">王任重</span>
+        <span class="qgrd del">史良</span>
+        <span class="qgrd">朱学范</span>
+        <span class="qgrd">阿沛·阿旺晋美</span>
+        <span class="qgrd">班禅额尔德尼·确吉坚赞</span>
+        <span class="qgrd">赛福鼎·艾则孜</span>
+        <span class="qgrd">周谷城</span>
+        <span class="qgrd">严济慈</span>
+        <span class="qgrd">胡愈之</span>
+        <span class="qgrd">荣毅仁</span>
+        <span class="qgrd">叶飞</span>
+        <span class="qgrd">廖汉生</span>
+        <span class="qgrd">韩先楚</span>
+        <span class="qgrd">黄华</span>
+        <span class="gwy">李鹏</span>
+        <span class="gwy">田纪云</span>
+        <span class="gwy">康世恩</span>
+        <span class="gwy">姬鹏飞</span>
+        <span class="gwy">张劲夫</span>
+        <span class="gwy zyjw">张爱萍</span>
+        <span class="gwy">吴学谦</span>
+        <span class="gwy">王丙乾</span>
+        <span class="gwy">宋平</span>
+        <span class="g3">郑天翔</span>
+        <span class="g3">杨易辰</span>
+        <span class="qgzx">杨静仁</span>
+        <span class="qgzx">刘澜涛</span>
+        <span class="qgzx">陆定一</span>
+        <span class="qgzx">程子华</span>
+        <span class="qgzx">康克清</span>
+        <span class="qgzx">季方</span>
+        <span class="qgzx">庄希泉</span>
+        <span class="qgzx">帕巴拉·格列朗杰</span>
+        <span class="qgzx">胡子昂</span>
+        <span class="qgzx">王昆仑</span>
+        <span class="qgzx">钱昌照</span>
+        <span class="qgzx">董其武</span>
+        <span class="qgzx">陶峙岳</span>
+        <span class="qgzx">周叔弢</span>
+        <span class="qgzx">杨成武</span>
+        <span class="qgzx del">肖华</span>
+        <span class="qgzx">陈再道</span>
+        <span class="qgzx">吕正操</span>
+        <span class="qgzx del">周建人</span>
+        <span class="qgzx">周培源</span>
+        <span class="qgzx">包尔汉</span>
+        <span class="qgzx">缪云台</span>
+        <span class="qgzx">王光英</span>
+        <span class="qgzx">邓兆祥</span>
+        <span class="qgzx">费孝通</span>
+        <span class="qgzx">赵朴初</span>
+        <span class="qgzx">叶圣陶</span>
+        <span class="qgzx">屈武</span>
+        <span class="qgzx">巴金</span>
+        <span class="qgzx ins">马文瑞</span>
+        <span class="qgzx ins">茅以升</span>
+        <span class="qgzx ins">刘靖基</span>
+        <span class="qgzx ins del">华罗庚</span>
+        <span class="zyjw">洪学智</span>
+      </details>
+    </div>
+    <script>
+      function checkFalse() {
+        document.querySelectorAll('[type=checkbox]').forEach(x => x.checked=!x.checked)
+      }
+      function sort(index) {
+        let nodeList = document.querySelectorAll('.sort')
+        let $content = document.getElementById('content')
+        let list = []
+        nodeList.forEach(x => ($content.removeChild(x),list.push(x)))
+        list.reverse()
+        list.forEach(x => $content.appendChild(x))
+      }
+    </script>
+  </body>
+</html>
