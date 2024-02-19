@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "devDependencies": {
     "express": "^4.18.2"
   },
